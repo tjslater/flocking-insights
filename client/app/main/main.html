@@ -1,0 +1,21 @@
+<!--<div ng-include="'components/navbar/navbar.html'"></div>-->
+
+<button>Play/pause</button>
+<div style="display: none">
+<h3>Frequency data</h3>
+<pre id="freq-div"></pre>
+<h3>Time data</h3>
+<pre id="time-div"></pre>
+</div>
+<div style="display: none" id="fill-div">
+
+</div>
+<audio id="myAudio" src="../assets/music/TheChosenRoadie.mp3"></audio>
+<!--<canvas id="special"></canvas>-->
+
+<div class="row" style="height:100%;">
+  <scene style="height:100%" ng-repeat="val in scenesVals" order="val"></scene>
+</div>
+<div class="row">
+  <canvas id="special"></canvas>
+</div>
